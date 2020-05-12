@@ -10,11 +10,8 @@
 
 ## 🛸 Technologies
 
-- [ReactJS](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [axios](https://github.com/axios/axios)
-- [PostgreSQL](https://www.postgresql.org/)
-- [TypeORM](https://typeorm.io/)
-- [Multer](https://github.com/expressjs/multer)
-- [CSV Parse](https://csv.js.org/parse/)
-- [VS Code](https://code.visualstudio.com/) using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/)
+- ⚛ [ReactJS](https://reactjs.org/)
+- ⌨️ [TypeScript](https://www.typescriptlang.org/)
+- 🚦 [axios](https://github.com/axios/axios)
+- 💅 [styled components](https://styled-components.com/)
+- 📝 [VS Code](https://code.visualstudio.com/) using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/)
