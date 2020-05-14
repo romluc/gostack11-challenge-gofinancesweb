@@ -24,7 +24,7 @@ export const CardContainer = styled.section`
 `;
 
 export const Card = styled.div`
-  background: ${({ total }: CardProps): string => (total ? '#FF872C' : '#fff')};
+  background: ${({ total }: CardProps): string => (total ? '#008b8b' : '#fff')};
   padding: 22px 32px;
   border-radius: 5px;
   color: ${({ total }: CardProps): string => (total ? '#fff' : '#363F5F')};
