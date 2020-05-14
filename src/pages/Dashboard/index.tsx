@@ -37,10 +37,18 @@ const Dashboard: React.FC = () => {
     async function loadTransactions(): Promise<void> {
       const response = await api.get('/transactions');
 
-      const transactionsFormatted = response.data.transactions.map(
+      const {
+        transactions: transactionsFromAPI,
+        balance: balanceFromAPI,
+      } = response.data;
+
+      const transactionsFormatted = transactionsFromAPI.map(
         (transaction: Transaction) => ({
           ...transaction,
-          formattedValue: formatValue(transaction.value),
+          formattedValue:
+            transaction.type === 'outcome'
+              ? ` - ${formatValue(transaction.value)}`
+              : formatValue(transaction.value),
           formattedDate: new Date(transaction.created_at).toLocaleDateString(
             'pt-br',
           ),
@@ -48,9 +56,9 @@ const Dashboard: React.FC = () => {
       );
 
       const balanceFormatted = {
-        income: formatValue(response.data.balance.income),
-        outcome: formatValue(response.data.balance.outcome),
-        total: formatValue(response.data.balance.total),
+        income: formatValue(balanceFromAPI.income),
+        outcome: formatValue(balanceFromAPI.outcome),
+        total: formatValue(balanceFromAPI.total),
       };
 
       setTransactions(transactionsFormatted);
@@ -100,9 +108,11 @@ const Dashboard: React.FC = () => {
             </thead>
             <tbody>
               {transactions.map(transaction => (
-                <tr>
+                <tr key={transaction.id}>
                   <td className="title">{transaction.title}</td>
-                  <td className="income">{transaction.formattedValue}</td>
+                  <td className={transaction.type}>
+                    {transaction.formattedValue}
+                  </td>
                   <td>{transaction.category.title}</td>
                   <td>{transaction.formattedDate}</td>
                 </tr>
