@@ -5,7 +5,7 @@
 ---
 
 <div align="center">
-![React App](https://user-images.githubusercontent.com/44209758/82222904-4f6bd600-98f8-11ea-9c03-7374c37f2a75.gif)
+<img alt="importing a csv file and updating list" src="https://user-images.githubusercontent.com/44209758/82222904-4f6bd600-98f8-11ea-9c03-7374c37f2a75.gif">
 </div>
 
 ---
@@ -17,8 +17,9 @@
 ---
 
 <div align="center">
-    ![Screen Shot 2020-05-18 at 11 00 48](https://user-images.githubusercontent.com/44209758/82221848-e5066600-98f6-11ea-84bd-f9acf921e641.png)
-  ![Screen Shot 2020-05-18 at 11 01 02](https://user-images.githubusercontent.com/44209758/82221839-e33ca280-98f6-11ea-9ccf-f838531ce072.png)
+   <img alt="transactions list" src="https://user-images.githubusercontent.com/44209758/82221848-e5066600-98f6-11ea-84bd-f9acf921e641.png">
+  <img alt="import file" src="https://user-images.githubusercontent.com/44209758/82221839-e33ca280-98f6-11ea-9ccf-f838531ce072.png">
+
 </div>
 
 ---
