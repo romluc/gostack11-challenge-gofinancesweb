@@ -36,6 +36,6 @@
 - 📝 [VS Code](https://code.visualstudio.com/) using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/)
 
 ***
-<p align="center">
-  Readme written by [romluc](https://github.com/romluc) 👋🏻
-</p>
+
+Readme written by [romluc](https://github.com/romluc) 👋🏻
+
